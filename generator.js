@@ -1,6 +1,6 @@
 console.log("How was your performance?")
 
-messages = [
+const performance = [
   "Absolutely Horrendous- 0/10",
   "Dreadful- 1/10",
   "Very Bad- 2/10",
@@ -14,5 +14,27 @@ messages = [
   "Absolute Perfection- 10/10"
 ]
 
-const number = Math.floor(Math.random()*11)
-console.log(messages[number])
+const elements = [
+  "sunshine",
+  "rain",
+  "mist",
+  "snow",
+  "ice",
+  "thunder",
+  "fire"
+]
+
+const adjectives = [
+  "burning",
+  "blinding",
+  "freezing",
+  "endless",
+  "tricky",
+  "majestic",
+  "ringing"
+]
+
+const rating = performance[Math.floor(Math.random()*11)]
+const element = elements[Math.floor(Math.random()*7)]
+const adj = adjectives[Math.floor(Math.random()*7)]
+console.log(`Through the ${adj} ${element}, you were ${rating}`)
